@@ -17,6 +17,28 @@
 
 
 fun main() {
-    println("Hello World!")
+    println("------------")
+    println("  Old Gold")
+    println("------------")
+    println()
+
+    val playerName1 = getString("Please enter player 1's name: ")
+    println("Hello, nice to meet you $playerName1")
+
+    val playerName2 = getString("Please enter player 2's name: ")
+    println("Hello, nice to meet you $playerName2")
+
 }
 
+fun getString(prompt: String): String {
+    var userInput: String
+    while (true) {
+        print(prompt)
+
+        userInput = readln()
+        if (userInput.isNotBlank())
+            break
+
+    }
+    return userInput
+}
