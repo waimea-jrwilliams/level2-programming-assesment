@@ -1,4 +1,4 @@
-# Coin Counter Game
+# Roller Dice Game
 
 by Jiivahn Williams
 
@@ -27,8 +27,8 @@ The project is written in the [Kotlin](https://kotlinlang.org) programming langu
 
 ## Project Description
 
-Old gold is a game with two players, its played on a one-dimensional grid with coins, where the aim is to win by
-being the player who removes the gold coin.
+Roller dice is a two player game where there is one dice and both players take turns to roll the dice
+and at the end of all the rounds the player with the most points wins
 
 
 
