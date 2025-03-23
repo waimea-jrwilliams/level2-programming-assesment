@@ -40,11 +40,16 @@ fun main() {
         // Start the game
     } else {
         println("Maybe next time!")
+        return
     }
 
     println("Roller dice is a two player game where there is one dice and both players take turns to roll the dice and at the end of all the rounds the player with the most points wins")
+    println("The way the points work are simple: A dice has numbers from 1 - 6 whatever dice number you land on is the number of points you get")
 
-
+    // Set up scores
+    var score1 = 0
+    var score2 = 0
+    val rounds = 5 // Number of rounds
 
 
 }
