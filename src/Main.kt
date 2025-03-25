@@ -12,14 +12,28 @@
  * =====================================================================
  */
 
-
 /**
  * This is the entry point for the program
  */
 fun main() {
-    println("------------")
-    println("  Roller Dice")
-    println("------------")
+    println("-------------------------------------------------------")
+    println(" ____            ___    ___                   \n" +
+            "/\\  _`\\         /\\_ \\  /\\_ \\                  \n" +
+            "\\ \\ \\L\\ \\    ___\\//\\ \\ \\//\\ \\      __   _ __  \n" +
+            " \\ \\ ,  /   / __`\\\\ \\ \\  \\ \\ \\   /'__`\\/\\`'__\\\n" +
+            "  \\ \\ \\\\ \\ /\\ \\L\\ \\\\_\\ \\_ \\_\\ \\_/\\  __/\\ \\ \\/ \n" +
+            "   \\ \\_\\ \\_\\ \\____//\\____\\/\\____\\ \\____\\\\ \\_\\ \n" +
+            "    \\/_/\\/ /\\/___/ \\/____/\\/____/\\/____/ \\/_/ \n" +
+            "                                              \n" +
+            "                                              \n" +
+            " ____                                         \n" +
+            "/\\  _`\\   __                                  \n" +
+            "\\ \\ \\/\\ \\/\\_\\    ___     __                   \n" +
+            " \\ \\ \\ \\ \\/\\ \\  /'___\\ /'__`\\                 \n" +
+            "  \\ \\ \\_\\ \\ \\ \\/\\ \\__//\\  __/                 \n" +
+            "   \\ \\____/\\ \\_\\ \\____\\ \\____\\                \n" +
+            "    \\/___/  \\/_/\\/____/\\/____/                ")
+    println("-------------------------------------------------------")
     println()
 
     // Ask for player names
@@ -37,22 +51,61 @@ fun main() {
 
     if (userResponse == "yes") {
         println("Great! Let's start the game.")
-        // Start the game
+    // Start the game
     } else {
         println("Maybe next time!")
         return
     }
 
-    println("Roller dice is a two player game where there is one dice and both players take turns to roll the dice and at the end of all the rounds the player with the most points wins")
-    println("The way the points work are simple: A dice has numbers from 1 - 6 whatever dice number you land on is the number of points you get")
+    // Here it shows the rules of the game
+    println("Roller dice is a two player game where there is one dice and both" +
+            " players take turns to roll the dice and at the end of all the rounds the player with the most points wins")
+    println("The way the points work are simple: A dice has numbers from 1 - 6 " +
+            "whatever dice number you land on is the number of points you get")
 
-    // Set up scores
-    var score1 = 0
-    var score2 = 0
-    val rounds = 5 // Number of rounds
+    println()
+    println("Lets get started!")
+    println()
+    println("Player one it is your turn to roll")
+    println("Type 'X' to roll")
+
+    val input = readLine()
+
+    if (input == "X" || input == "x") {
+        println("Rolling the dice...")
+        // Add your dice roll logic here
+    } else {
+        println("Invalid input. Please type 'X' to roll.")
+    }
+
+
+
+    // Create a list
+    val dices = mutableListOf<String>()
+
+    println(dices)
+
+    // Add some things
+    dices.add("1")
+    dices.add("2")
+    dices.add("3")
+    dices.add("4")
+    dices.add("5")
+    dices.add("6")
+
+    // Shuffle the list (randomise)
+    dices.shuffle()
+    println(dices)
+
+    // Get a random item from list
+    val item = dices.random()
+    println("Random item: $item")
+
+
 
 
 }
+
 
 /**
  * Function to get a string from a user
