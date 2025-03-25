@@ -15,8 +15,10 @@
 /**
  * This is the entry point for the program
  */
+const val ROLL = 'X'
+
 fun main() {
-    println("-------------------------------------------------------")
+    println("+-------------------------------------------------------+")
     println(" ____            ___    ___                   \n" +
             "/\\  _`\\         /\\_ \\  /\\_ \\                  \n" +
             "\\ \\ \\L\\ \\    ___\\//\\ \\ \\//\\ \\      __   _ __  \n" +
@@ -33,8 +35,17 @@ fun main() {
             "  \\ \\ \\_\\ \\ \\ \\/\\ \\__//\\  __/                 \n" +
             "   \\ \\____/\\ \\_\\ \\____\\ \\____\\                \n" +
             "    \\/___/  \\/_/\\/____/\\/____/                ")
-    println("-------------------------------------------------------")
-    println()
+    println("+-------------------------------------------------------+")
+    println("+--------------------------------------------------------------------------------+")
+    println("INSTRUCTIONS")
+    println("There is two players player 1 & player 2.")
+    println("player one roles the die to see what number they get")
+    println("The dice consists of numbers from one to six,")
+    println("whatever number it lands on would add to your points. ")
+    println("It goes on until one player looses to the other person")
+    println("get the most points in five rounds to win the game!.")
+    println("+--------------------------------------------------------------------------------+")
+
 
     // Ask for player names
     println("You are player 1.")
@@ -57,28 +68,31 @@ fun main() {
         return
     }
 
-    // Here it shows the rules of the game
-    println("Roller dice is a two player game where there is one dice and both" +
-            " players take turns to roll the dice and at the end of all the rounds the player with the most points wins")
-    println("The way the points work are simple: A dice has numbers from 1 - 6 " +
-            "whatever dice number you land on is the number of points you get")
-
     println()
     println("Lets get started!")
     println()
     println("Player one it is your turn to roll")
     println("Type 'X' to roll")
 
-    val input = readLine()
+    fun main() {
+        val dices = mutableListOf("1", "2", "3", "4", "5", "6")
+        dices.shuffle()
 
-    if (input == "X" || input == "x") {
-        println("Rolling the dice...")
-        // Add your dice roll logic here
-    } else {
-        println("Invalid input. Please type 'X' to roll.")
+        println("Type 'X' to roll the dice")
+
+        while (true) {  // Infinite loop to keep asking for input until valid
+            val input = readLine()
+
+            if (input?.singleOrNull() == ROLL) {
+                val item = dices.random()  // Get a random item from the shuffled list
+                println("You rolled: $item")
+                break  // Exit the loop after a valid roll
+            } else {
+                println("Invalid input. Please type 'X' to roll.")
+                continue
+            }
+        }
     }
-
-
 
     // Create a list
     val dices = mutableListOf<String>()
@@ -93,20 +107,8 @@ fun main() {
     dices.add("5")
     dices.add("6")
 
-    // Shuffle the list (randomise)
-    dices.shuffle()
-    println(dices)
-
-    // Get a random item from list
-    val item = dices.random()
-    println("Random item: $item")
-
-
-
 
 }
-
-
 /**
  * Function to get a string from a user
  */
