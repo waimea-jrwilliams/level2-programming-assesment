@@ -19,22 +19,24 @@ const val ROLL = 'X'
 
 fun main() {
     println("+-------------------------------------------------------+")
-    println(" ____            ___    ___                   \n" +
-            "/\\  _`\\         /\\_ \\  /\\_ \\                  \n" +
-            "\\ \\ \\L\\ \\    ___\\//\\ \\ \\//\\ \\      __   _ __  \n" +
-            " \\ \\ ,  /   / __`\\\\ \\ \\  \\ \\ \\   /'__`\\/\\`'__\\\n" +
-            "  \\ \\ \\\\ \\ /\\ \\L\\ \\\\_\\ \\_ \\_\\ \\_/\\  __/\\ \\ \\/ \n" +
-            "   \\ \\_\\ \\_\\ \\____//\\____\\/\\____\\ \\____\\\\ \\_\\ \n" +
-            "    \\/_/\\/ /\\/___/ \\/____/\\/____/\\/____/ \\/_/ \n" +
-            "                                              \n" +
-            "                                              \n" +
-            " ____                                         \n" +
-            "/\\  _`\\   __                                  \n" +
-            "\\ \\ \\/\\ \\/\\_\\    ___     __                   \n" +
-            " \\ \\ \\ \\ \\/\\ \\  /'___\\ /'__`\\                 \n" +
-            "  \\ \\ \\_\\ \\ \\ \\/\\ \\__//\\  __/                 \n" +
-            "   \\ \\____/\\ \\_\\ \\____\\ \\____\\                \n" +
-            "    \\/___/  \\/_/\\/____/\\/____/                ")
+    println(
+        " ____            ___    ___                   \n" +
+                "/\\  _`\\         /\\_ \\  /\\_ \\                  \n" +
+                "\\ \\ \\L\\ \\    ___\\//\\ \\ \\//\\ \\      __   _ __  \n" +
+                " \\ \\ ,  /   / __`\\\\ \\ \\  \\ \\ \\   /'__`\\/\\`'__\\\n" +
+                "  \\ \\ \\\\ \\ /\\ \\L\\ \\\\_\\ \\_ \\_\\ \\_/\\  __/\\ \\ \\/ \n" +
+                "   \\ \\_\\ \\_\\ \\____//\\____\\/\\____\\ \\____\\\\ \\_\\ \n" +
+                "    \\/_/\\/ /\\/___/ \\/____/\\/____/\\/____/ \\/_/ \n" +
+                "                                              \n" +
+                "                                              \n" +
+                " ____                                         \n" +
+                "/\\  _`\\   __                                  \n" +
+                "\\ \\ \\/\\ \\/\\_\\    ___     __                   \n" +
+                " \\ \\ \\ \\ \\/\\ \\  /'___\\ /'__`\\                 \n" +
+                "  \\ \\ \\_\\ \\ \\ \\/\\ \\__//\\  __/                 \n" +
+                "   \\ \\____/\\ \\_\\ \\____\\ \\____\\                \n" +
+                "    \\/___/  \\/_/\\/____/\\/____/                "
+    )
     println("+-------------------------------------------------------+")
     println("+--------------------------------------------------------------------------------+")
     println("INSTRUCTIONS")
@@ -49,12 +51,12 @@ fun main() {
 
     // Ask for player names
     println("You are player 1.")
-    val playerName1 = getString("Please enter player 1's name: ")
+    val userName1 = getString("Please enter player 1's name: ")
 
     println("Next is player 2's name.")
-    val playerName2 = getString("Please enter player 2's name: ")
+    val userName2 = getString("Please enter player 2's name: ")
 
-    println("Hello, nice to meet you $playerName1 and $playerName2")
+    println("Hello, nice to meet you $userName1 and $userName2")
 
     // Ask if they want to play the game
     println("Would you like to play this game? (yes/no)")
@@ -62,7 +64,7 @@ fun main() {
 
     if (userResponse == "yes") {
         println("Great! Let's start the game.")
-    // Start the game
+        // Start the game
     } else {
         println("Maybe next time!")
         return
@@ -73,28 +75,41 @@ fun main() {
     println()
     println("Player one it is your turn to roll")
     println("Type 'X' to roll")
+}
 
-    fun main() {
-        val dices = mutableListOf("1", "2", "3", "4", "5", "6")
-        dices.shuffle()
+fun main() {
+    // Initialize scores
+    var score1 = 0
+    var score2 = 0
+    // Play 5 rounds
+    for (round in 1..5) {
+        println("\n--- Round $round ---")
 
-        println("Type 'X' to roll the dice")
+        // Player 1's Turn
+        score1 += rollDice(userName1)
 
-        while (true) {  // Infinite loop to keep asking for input until valid
-            val input = readLine()
-
-            if (input?.singleOrNull() == ROLL) {
-                val item = dices.random()  // Get a random item from the shuffled list
-                println("You rolled: $item")
-                break  // Exit the loop after a valid roll
-            } else {
-                println("Invalid input. Please type 'X' to roll.")
-                continue
-            }
-        }
+        // Player 2's Turn
+        score2 += rollDice(userName2)
     }
 
-    // Create a list
+    // Declare the winner
+    println("\nFinal Scores:")
+    println("$userName1: $score1 points")
+    println("$userName2: $score2 points")
+
+    if (score1 > score2) {
+        println("Winner: $userName1!")
+    } else if (score2 > score1) {
+        println("Winner: $UserName2!")
+    } else {
+        println("It's a tie!")
+    }
+     else {
+    println("Maybe next time!")
+}
+
+
+// Create a list
     val dices = mutableListOf<String>()
 
     println(dices)
