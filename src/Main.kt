@@ -69,31 +69,31 @@ fun main() {
         var score2 = 0
 
         // Play 5 rounds
-        for (round in 1..5) {
-            println("--- Round $round ---")
+        //for (round in 1..5) {
+           //println("--- Round $round ---")
 
             // Player 1's Turn
-            score1 += rollDice(userName1)
+            //score1 += rollDice(userName1)
 
             // Player 2's Turn
-            score2 += rollDice(userName2)
+            //score2 += rollDice(userName2)
         }
 
         // Declare the winner
-        println("Final Scores:")
-        println("$userName1: $score1 points")
-        println("$userName2: $score2 points")
+        //println("Final Scores:")
+        //println("$userName1: $score1 points")
+        //println("$userName2: $score2 points")
 
-        if (score1 > score2) {
-            println("Winner: $userName1!")
-        } else if (score2 > score1) {
-            println("Winner: $userName2!")
-        } else {
-            println("It's a tie!")
-        }
-    } else {
-        println("Maybe next time!")
-    }
+        //if (score1 > score2) {
+            //println("Winner: $userName1!")
+        //} else if (score2 > score1) {
+            //println("Winner: $userName2!")
+        //} else {
+            //println("It's a tie!")
+        //}
+    //} else {
+        //println("Maybe next time!")
+   //}
 
     // Create a list
     val dices = mutableListOf<String>()
@@ -116,10 +116,25 @@ fun getString(prompt: String): String {
     var userInput: String
     while (true) {
         print(prompt)
-        userInput = readLine() ?: ""
+        userInput = readlnOrNull() ?: ""
         if (userInput.isNotBlank())
             break
     }
     return userInput
 }
 
+// Dice rolling system here --->
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//

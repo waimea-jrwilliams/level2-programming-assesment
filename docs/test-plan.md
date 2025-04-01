@@ -12,30 +12,71 @@ Terminology:
 
 ## Example Test Name
 
-Example test description. Example test description. Example test description. Example test description. Example test description. Example test description.
+I am testing to see if the game instructions print out correctly
 
 ### Test Data To Use
 
-Details of test data and reasons for selection. Details of test data and reasons for selection. Details of test data and reasons for selection.
+I will run my code to get an output
 
 ### Expected Test Result
 
-Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. 
+It should print out all the inputted instructions
 
 ---
 
 ## Example Test Name
 
-Example test description. Example test description. Example test description. Example test description. Example test description. Example test description.
+I'm going to test and see if the getting the player name function works
 
 ### Test Data To Use
 
-Details of test data and reasons for selection. Details of test data and reasons for selection. Details of test data and reasons for selection.
+By running my code it will test it 
 
 ### Expected Test Result
 
-Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. 
+"Enter player 1 ... 2's, username"
+"Hello, welcome ____ + ____"
 
 ---
 
+## Example Test Name
 
+I will test if the players are able to say yes and no to playing the game 
+
+### Test Data To Use
+
+
+
+### Expected Test Result
+
+Statement detailing what should happen.
+
+---
+
+## Example Test Name
+
+Example test description.
+
+### Test Data To Use
+
+Details of test data and reasons for selection.
+
+### Expected Test Result
+
+Statement detailing what should happen.
+
+---
+
+## Example Test Name
+
+Example test description.
+
+### Test Data To Use
+
+Details of test data and reasons for selection.
+
+### Expected Test Result
+
+Statement detailing what should happen.
+
+---
