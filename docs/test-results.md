@@ -6,11 +6,11 @@ The test results show the actual outcome of the testing, following the [Test Pla
 
 ## Example Test Name
 
-Example test description. Example test description.Example test description. Example test description.Example test description. Example test description.
+Testing to se if the print statement for the instructions work
 
 ### Test Data Used
 
-Details of test data. Details of test data. Details of test data. Details of test data. Details of test data. Details of test data. Details of test data.
+By running the code it should print out all the instructions i have written in a neat format
 
 ### Test Result
 
