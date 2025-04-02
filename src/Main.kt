@@ -15,7 +15,10 @@
 /**
  * This is the entry point for the program
  */
-const val ROLL = 'X'
+const val ROLL = 'r'
+
+// Create a list of dice values
+val dices = mutableListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15")
 
 fun main() {
     println("+-------------------------------------------------------+")
@@ -45,7 +48,7 @@ fun main() {
     println("The dice consists of numbers from one to six,")
     println("whatever number it lands on would add to your points. ")
     println("It goes on until one player loses to the other person")
-    println("get the most points in five rounds to win the game!.")
+    println("get the most points in ten rounds to win the game!.")
     println("+--------------------------------------------------------------------------------+")
 
     // Ask for player names
@@ -68,9 +71,9 @@ fun main() {
         var score1 = 0
         var score2 = 0
 
-        // Play 5 rounds
-        for (round in 1..5) {
-           println("\n--- Round $round ---")
+        // Play 8 rounds
+        for (round in 1..10) {
+           println("\n+--- Round $round ---+")
 
             // Player 1's Turn
             score1 += rollDice(userName1)
@@ -85,9 +88,9 @@ fun main() {
         println("$userName2: $score2 points")
 
         if (score1 > score2) {
-            println("Winner: $userName1!")
+            println("The winner is: $userName1!")
         } else if (score2 > score1) {
-            println("Winner: $userName2!")
+            println("The winner is: $userName2!")
         } else {
             println("It's a tie!")
         }
@@ -105,8 +108,15 @@ fun main() {
     dices.add("4")
     dices.add("5")
     dices.add("6")
-
-    println(dices)
+    dices.add("7")
+    dices.add("8")
+    dices.add("9")
+    dices.add("10")
+    dices.add("11")
+    dices.add("12")
+    dices.add("13")
+    dices.add("14")
+    dices.add("15")
 }
 
 /**
@@ -123,10 +133,14 @@ fun getString(prompt: String): String {
     return userInput
 }
 
+
 /**
  * Function to get the dice roll system
  */
 fun rollDice(userName: String): Int {
-    print("$userName, Please type 'X' to roll ")
-readln() // Wait for the users input
+    print("$userName, Please type 'r' to roll ")
+    readln() // Wait for the users input
+    val roll = dices.random().toInt() // Get a random number between 1 - 15
+    println("$userName rolled a $roll")
+    return roll
 }
