@@ -26,8 +26,8 @@ The program stores data using:
 
 The program structure:
 - [+] Is broken up into **functions**: a main function, plus other supporting functions 
-- [ ] Contains **sequences** of instructions
-- [ ] Uses **conditional** instructions to control the program flow
+- [+] Contains **sequences** of instructions
+- [+] Uses **conditional** instructions to control the program flow
 - [+] Uses program **branches** (if...else, when, etc.)
 - [+] Uses **iteration** (loops) to repeat things (for, while, etc.)
 
@@ -41,15 +41,15 @@ The program code:
 ### Program Testing
 
 The program has been tested and there is documented evidence that:
-- [ ] The game is **fully functional**, showing testing of:
-  - [ ] game setup
-  - [ ] player moves
-  - [ ] players taking turns
-  - [ ] scoring (if any)
-  - [ ] players winning
-  - [ ] final feedback (if appropriate)
-- [ ] **Valid (expected) data** has been used to test **all data inputs**
-- [ ] Where tests have failed, **fixes** are discussed and **tests re-run**
+- [+] The game is **fully functional**, showing testing of:
+  - [+] game setup
+  - [+] player moves
+  - [+] players taking turns
+  - [+] scoring (if any)
+  - [+] players winning
+  - [+] final feedback (if appropriate)
+- [+] **Valid (expected) data** has been used to test **all data inputs**
+- [+] Where tests have failed, **fixes** are discussed and **tests re-run**
 
 ---
 

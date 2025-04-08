@@ -26,7 +26,7 @@ It should print out all the inputted instructions
 
 ## Example Test Name
 
-I'm going to test and see if the getting the player name function works
+I'm going to test and see if the players take turns and make moves
 
 ### Test Data To Use
 
@@ -34,49 +34,55 @@ By running my code it will test it
 
 ### Expected Test Result
 
-"Enter player 1 ... 2's, username"
-"Hello, welcome ____ + ____"
+"Player 1 your turn"
+"Player 2 your turn"
 
 ---
 
 ## Example Test Name
 
-I will test if the players are able to say yes and no to playing the game 
+a test to see if the score system works
 
 ### Test Data To Use
 
-
+by running the code it will test it 
 
 ### Expected Test Result
 
-Statement detailing what should happen.
+"score after round 1"
+"player 1 = __"
+"player 2 = __"
 
 ---
 
 ## Example Test Name
 
-Example test description.
+testing to see if it states who the winner is
 
 ### Test Data To Use
 
-Details of test data and reasons for selection.
+by running my code it will test it
 
 ### Expected Test Result
 
-Statement detailing what should happen.
+player1 56 points!
+player2 49 points!
+player1 wins!
 
 ---
 
 ## Example Test Name
 
-Example test description.
+testing if it displays final feedback
 
 ### Test Data To Use
 
-Details of test data and reasons for selection.
+by running my code it will test it 
 
 ### Expected Test Result
 
-Statement detailing what should happen.
+"___________"
+"___________"
+Hope you had fun 
 
 ---

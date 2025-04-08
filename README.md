@@ -24,13 +24,6 @@ The project is written in the [Kotlin](https://kotlinlang.org) programming langu
 - Program test evidence is in [test-results.md](docs/test-results.md) in the docs folder
 
 ---
-fun rollDice(playerName: String): Int {
-println("$playerName, press Enter to roll the dice...")
-readln() // Wait for user input
-val roll = random.nextInt(1, 7) // Generate a number between 1 and 6
-println("$playerName rolled a $roll!")
-return roll
-}
 
 ## Project Description
 

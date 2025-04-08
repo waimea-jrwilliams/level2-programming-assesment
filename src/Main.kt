@@ -43,9 +43,10 @@ fun main() {
     println("+-------------------------------------------------------+")
     println("+--------------------------------------------------------------------------------+")
     println("INSTRUCTIONS")
+    println("The game is called Roller Dice")
     println("There is two players player 1 & player 2.")
     println("player one rolls the die to see what number they get")
-    println("The dice consists of numbers from one to six,")
+    println("The dice consists of numbers from one to fifteen,")
     println("whatever number it lands on would add to your points. ")
     println("It goes on until one player loses to the other person")
     println("get the most points in ten rounds to win the game!.")
@@ -80,6 +81,11 @@ fun main() {
 
             // Player 2's Turn
             score2 += rollDice(userName2)
+
+            // Display the scores after each round
+            println("\nScores after Round $round:")
+            println("$userName1: $score1 points")
+            println("$userName2: $score2 points")
         }
 
         //Declare the winner
@@ -97,6 +103,9 @@ fun main() {
     } else {
         println("Maybe next time!")
    }
+   println("I hope you have had fun playing Roller Dice.")
+   println("If you have any suggestions for the game see Jiivahn Williams the creator")
+   println("For now be sure to leave a five star review, Thank you and Goodbye")
 
     // Create a list
     val dices = mutableListOf<String>()
@@ -132,8 +141,6 @@ fun getString(prompt: String): String {
     }
     return userInput
 }
-
-
 /**
  * Function to get the dice roll system
  */
