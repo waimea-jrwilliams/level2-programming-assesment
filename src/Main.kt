@@ -15,33 +15,20 @@
 /**
  * This is the entry point for the program
  */
-const val ROLL = 'r'
+const val ROLL  = 'r'
 
 // Create a list of dice values
 val dices = mutableListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15")
 
 fun main() {
     println("+-------------------------------------------------------+")
-    println(
-        " ____            ___    ___                   \n" +
-                "/\\  _`\\         /\\_ \\  /\\_ \\                  \n" +
-                "\\ \\ \\L\\ \\    ___\\//\\ \\ \\//\\ \\      __   _ __  \n" +
-                " \\ \\ ,  /   / __`\\\\ \\ \\  \\ \\ \\   /'__`\\/\\`'__\\\n" +
-                "  \\ \\ \\\\ \\ /\\ \\L\\ \\\\_\\ \\_ \\_\\ \\_/\\  __/\\ \\ \\/ \n" +
-                "   \\ \\_\\ \\_\\ \\____//\\____\\/\\____\\ \\____\\\\ \\_\\ \n" +
-                "    \\/_/\\/ /\\/___/ \\/____/\\/____/\\/____/ \\/_/ \n" +
-                "                                              \n" +
-                "                                              \n" +
-                " ____                                         \n" +
-                "/\\  _`\\   __                                  \n" +
-                "\\ \\ \\/\\ \\/\\_\\    ___     __                   \n" +
-                " \\ \\ \\ \\ \\/\\ \\  /'___\\ /'__`\\                 \n" +
-                "  \\ \\ \\_\\ \\ \\ \\/\\ \\__//\\  __/                 \n" +
-                "   \\ \\____/\\ \\_\\ \\____\\ \\____\\                \n" +
-                "    \\/___/  \\/_/\\/____/\\/____/                "
-    )
+    println(" ____       _ _             ____  _          \n" +
+            "|  _ \\ ___ | | | ___ _ __  |  _ \\(_) ___ ___ \n" +
+            "| |_) / _ \\| | |/ _ \\ '__| | | | | |/ __/ _ \\\n" +
+            "|  _ < (_) | | |  __/ |    | |_| | | (_|  __/\n" +
+            "|_| \\_\\___/|_|_|\\___|_|    |____/|_|\\___\\___|")
     println("+-------------------------------------------------------+")
-    println("+--------------------------------------------------------------------------------+")
+    println("+-------------------------------------------------------+")
     println("INSTRUCTIONS")
     println("The game is called Roller Dice")
     println("There is two players player 1 & player 2.")
@@ -50,7 +37,14 @@ fun main() {
     println("whatever number it lands on would add to your points. ")
     println("It goes on until one player loses to the other person")
     println("get the most points in ten rounds to win the game!.")
-    println("+--------------------------------------------------------------------------------+")
+    println("+-------------------------------------------------------+")
+
+    // Ask if they want to play the game
+    println("Would you like to play this game? (yes/no)")
+    val userResponse = readln()
+
+    if (userResponse == "yes") {
+        println("Great lets start shall we!.")
 
     // Ask for player names
     println("You are player 1.")
@@ -60,13 +54,7 @@ fun main() {
     val userName2 = getString("Please enter player 2's name: ")
 
     println("Hello, nice to meet you $userName1 and $userName2")
-
-    // Ask if they want to play the game
-    println("Would you like to play this game? (yes/no)")
-    val userResponse = readln()
-
-    if (userResponse == "yes") {
-        println("Great! Let's start the game.")
+    println("Loading the game...")
 
         // Initialize scores
         var score1 = 0
@@ -104,7 +92,7 @@ fun main() {
         println("Maybe next time!")
    }
    println("I hope you have had fun playing Roller Dice.")
-   println("If you have any suggestions for the game see Jiivahn Williams the creator")
+   println("If you have any tips for the game see Jiivahn Williams the creator")
    println("For now be sure to leave a five star review, Thank you and Goodbye")
 
     // Create a list
