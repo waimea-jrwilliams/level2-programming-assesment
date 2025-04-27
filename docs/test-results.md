@@ -6,7 +6,7 @@ The test results show the actual outcome of the testing, following the [Test Pla
 
 ## Example Test Name
 
-Testing to se if the print statement for the instructions work
+Testing to see if the print statement for the instructions work
 
 ### Test Data Used
 
@@ -14,9 +14,9 @@ By running the code it should print out all the instructions I have written in a
 
 ### Test Result
 
+The result should be a print statement of all the instructions.
 ![instructionsetup.gif](screenshots/instructionsetup.gif)
-
-the result is the same as I wanted 
+Result: Pass
 
 ---
 
@@ -30,9 +30,9 @@ By running the code it will show what I have expected
 
 ### Test Result
 
+The result should show the players taking turns
 ![turns moves.gif](screenshots/turns moves.gif)
-
-it came out how I liked it 
+Result: Pass 
 
 ---
 
@@ -46,8 +46,9 @@ by running the code it will test it
 
 ### Test Result
 
+The result should be a gif on how the score system works
 ![scoresystem.gif](screenshots/scoresystem.gif)
-it's just as I expected
+Result: Pass
 
 
 ---
@@ -62,8 +63,9 @@ by running the code it will test it
 
 ### Test Result
 
+This should Print a statement on who wins
 ![winners.gif](screenshots/winners.gif)
-it turned out exactly like I said
+Result: Pass
 
 
 ---
@@ -78,7 +80,8 @@ by running the code it will test it
 
 ### Test Result
 
+This should display the final feedback
 ![finalfeedback.gif](screenshots/finalfeedback.gif)
-
+Result: Pass
 
 ---
