@@ -10,13 +10,13 @@ Terminology:
 
 ---
 
-## Example Test Name
+## Instructions
 
-I am testing to see if the game instructions print out correctly
+Testing to see if the print statement for the instructions work
 
-### Test Data To Use
+### Test Data Used
 
-I will run my code to get an output
+By running the code it should print out all the instructions I have written in a neat format
 
 ### Expected Test Result
 
@@ -24,13 +24,13 @@ It should print out all the inputted instructions
 
 ---
 
-## Example Test Name
+## Player turns
 
-I'm going to test and see if the players take turns and make moves
+Testing to see if players can take turns and make moves
 
-### Test Data To Use
+### Test Data Used
 
-By running my code it will test it 
+By running the code it will show what I have expected
 
 ### Expected Test Result
 
@@ -39,13 +39,13 @@ By running my code it will test it
 
 ---
 
-## Example Test Name
+## Scoring system
 
 a test to see if the score system works
 
-### Test Data To Use
+### Test Data Used
 
-by running the code it will test it 
+by running the code it will test it
 
 ### Expected Test Result
 
@@ -55,29 +55,29 @@ by running the code it will test it
 
 ---
 
-## Example Test Name
+## The winning quote
 
-testing to see if it states who the winner is
+testing to see if it states who wins
 
-### Test Data To Use
+### Test Data Used
 
-by running my code it will test it
+by running the code it will test it
 
 ### Expected Test Result
-
-player1 56 points!
-player2 49 points!
-player1 wins!
+ 
+"player 1's score ___"
+"player 2's score ___"
+"The winner is ___!"
 
 ---
 
-## Example Test Name
+## Final feedback
 
-testing if it displays final feedback
+testing if it displays the final feedback
 
-### Test Data To Use
+### Test Data Used
 
-by running my code it will test it 
+by running the code it will test it
 
 ### Expected Test Result
 
