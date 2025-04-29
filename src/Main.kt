@@ -18,7 +18,7 @@
 const val ROLL  = 'r'
 
 // Create a list of dice values
-val dices = mutableListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15")
+val dices = mutableListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "99")
 
 fun main() {
     println("+-------------------------------------------------------+")
@@ -33,7 +33,7 @@ fun main() {
     println("The game is called Roller Dice")
     println("There is two players player 1 & player 2.")
     println("player one rolls the die to see what number they get")
-    println("The dice consists of numbers from one to fifteen,")
+    println("The dice consists of numbers from one to thirty five,")
     println("whatever number it lands on would add to your points. ")
     println("It goes on until one player loses to the other person")
     println("get the most points in ten rounds to win the game!.")
@@ -114,6 +114,20 @@ fun main() {
     dices.add("13")
     dices.add("14")
     dices.add("15")
+    dices.add("16")
+    dices.add("17")
+    dices.add("18")
+    dices.add("19")
+    dices.add("20")
+    dices.add("21")
+    dices.add("22")
+    dices.add("23")
+    dices.add("24")
+    dices.add("25")
+    dices.add("26")
+    dices.add("27")
+    dices.add("28")
+    dices.add("29")
 }
 
 /**
