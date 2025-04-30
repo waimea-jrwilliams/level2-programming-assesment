@@ -26,8 +26,8 @@ The program stores data using:
 
 The program structure:
 - [x] Is broken up into **functions**: a main function, plus other supporting functions 
-- [ ] Contains **sequences** of instructions
-- [ ] Uses **conditional** instructions to control the program flow
+- [x] Contains **sequences** of instructions
+- [x] Uses **conditional** instructions to control the program flow
 - [x] Uses program **branches** (if...else, when, etc.)
 - [x] Uses **iteration** (loops) to repeat things (for, while, etc.)
 
