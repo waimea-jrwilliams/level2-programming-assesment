@@ -24,21 +24,6 @@ It should print out all the inputted instructions
 
 ---
 
-## Player turns
-
-Testing to see if players can take turns and make moves
-
-### Test Data Used
-
-By running the code it will show what I have expected
-
-### Expected Test Result
-
-"Player 1 your turn"
-"Player 2 your turn"
-
----
-
 ## Scoring system
 
 a test to see if the score system works
@@ -64,7 +49,7 @@ testing to see if it states who wins
 by running the code it will test it
 
 ### Expected Test Result
- 
+
 "player 1's score ___"
 "player 2's score ___"
 "The winner is ___!"
@@ -83,6 +68,20 @@ by running the code it will test it
 
 "___________"
 "___________"
-Hope you had fun 
+Hope you had fun
+
+---
+## Player turns
+
+Testing to see if players can take turns and make moves
+
+### Test Data Used
+
+By running the code it will show what I have expected
+
+### Expected Test Result
+
+"Player 1 your turn"
+"Player 2 your turn"
 
 ---
